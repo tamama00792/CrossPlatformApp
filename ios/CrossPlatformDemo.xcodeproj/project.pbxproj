@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		43A0028395FF0D5020669E6B /* libPods-CrossPlatformDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 916F8994CA1BB53205DE63DA /* libPods-CrossPlatformDemo.a */; };
 		49C9C4F72CE2F437006FB521 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C9C4F62CE2F437006FB521 /* AppDelegate.m */; };
-		49C9C4FA2CE2F437006FB521 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C9C4F92CE2F437006FB521 /* SceneDelegate.m */; };
 		49C9C4FD2CE2F437006FB521 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C9C4FC2CE2F437006FB521 /* ViewController.m */; };
 		49C9C5002CE2F437006FB521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C9C4FE2CE2F437006FB521 /* Main.storyboard */; };
 		49C9C5022CE2F438006FB521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C9C5012CE2F438006FB521 /* Assets.xcassets */; };
@@ -22,8 +21,6 @@
 		49C9C4F22CE2F437006FB521 /* CrossPlatformDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossPlatformDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C9C4F52CE2F437006FB521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49C9C4F62CE2F437006FB521 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		49C9C4F82CE2F437006FB521 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		49C9C4F92CE2F437006FB521 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		49C9C4FB2CE2F437006FB521 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		49C9C4FC2CE2F437006FB521 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		49C9C4FF2CE2F437006FB521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,8 +67,6 @@
 			children = (
 				49C9C4F52CE2F437006FB521 /* AppDelegate.h */,
 				49C9C4F62CE2F437006FB521 /* AppDelegate.m */,
-				49C9C4F82CE2F437006FB521 /* SceneDelegate.h */,
-				49C9C4F92CE2F437006FB521 /* SceneDelegate.m */,
 				49C9C4FB2CE2F437006FB521 /* ViewController.h */,
 				49C9C4FC2CE2F437006FB521 /* ViewController.m */,
 				49C9C4FE2CE2F437006FB521 /* Main.storyboard */,
@@ -97,7 +92,6 @@
 				5629C3386AA00073C34E0EC3 /* Pods-CrossPlatformDemo.debug.xcconfig */,
 				472F1D48436D6F470396B2D1 /* Pods-CrossPlatformDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -236,7 +230,6 @@
 				49C9C4FD2CE2F437006FB521 /* ViewController.m in Sources */,
 				49C9C4F72CE2F437006FB521 /* AppDelegate.m in Sources */,
 				49C9C5082CE2F438006FB521 /* main.m in Sources */,
-				49C9C4FA2CE2F437006FB521 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G5HUH99PBY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrossPlatformDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -417,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G5HUH99PBY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrossPlatformDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
