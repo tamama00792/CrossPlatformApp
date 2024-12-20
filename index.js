@@ -1,6 +1,6 @@
 import React from 'react';
 import {AppRegistry, StyleSheet, Text, View} from 'react-native';
-
+import { SearchBar } from './rn-components/searchBar';
 const RNHighScores = ({scores}) => {
   const contents = scores.map(score => (
     <Text key={score.name}>
@@ -10,8 +10,9 @@ const RNHighScores = ({scores}) => {
   ));
   return (
     <View style={styles.container}>
+      <SearchBar hint='123'></SearchBar>
       <Text style={styles.highScoresTitle}>
-        2048 High Scores!
+        20481 High Scores!
       </Text>
       <Text style={styles.scores}>{contents}</Text>
     </View>
@@ -20,7 +21,7 @@ const RNHighScores = ({scores}) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
