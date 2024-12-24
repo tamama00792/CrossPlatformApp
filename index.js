@@ -1,23 +1,20 @@
-import React from 'react';
-import {AppRegistry, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import {AppRegistry, StyleSheet, View} from 'react-native';
 import { SearchBar } from './rn-components/searchBar';
-const RNHighScores = ({scores}) => {
-  const contents = scores.map(score => (
-    <Text key={score.name}>
-      {score.name}:{score.value}
-      {'\n'}
-    </Text>
-  ));
-  return (
-    <View style={styles.container}>
-      <SearchBar hint='123'></SearchBar>
-      <Text style={styles.highScoresTitle}>
-        20481 High Scores!
-      </Text>
-      <Text style={styles.scores}>{contents}</Text>
-    </View>
-  );
-};
+
+class RNPDDHomePage extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <SearchBar hint='123' style={[styles.child,styles.searchBar]}></SearchBar>
+        <View style={[styles.child,styles.segmentBar]}></View>
+        <View style={[styles.child,styles.content]}></View>
+        <View style={[styles.child,styles.tabBar]}></View>
+        
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -25,18 +22,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
+    flexDirection: 'column',
   },
-  highScoresTitle: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  child: {
+    flex: 0,
+    width: '100%',
   },
-  scores: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  searchBar: {
+    height: 60,
+  },
+  segmentBar: {
+    height: 40,
+    backgroundColor: 'blue',
+  },
+  content: {
+    flex: 1,
+    backgroundColor: 'green',
+  },
+  tabBar: {
+    height: 80,
+    backgroundColor: 'red',
   },
 });
 
 // 模块名称
-AppRegistry.registerComponent('RNHighScores', () => RNHighScores);
+AppRegistry.registerComponent('RNPDDHomePage', () => RNPDDHomePage);

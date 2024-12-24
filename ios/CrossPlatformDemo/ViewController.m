@@ -33,20 +33,9 @@
 
     RCTRootView *rootView =
       [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
-                                  moduleName: @"RNHighScores"
+                                  moduleName: @"RNPDDHomePage"
                            initialProperties:
-                             @{
-                               @"scores" : @[
-                                 @{
-                                   @"name" : @"Alex",
-                                   @"value": @"42"
-                                  },
-                                 @{
-                                   @"name" : @"Joel",
-                                   @"value": @"10"
-                                 }
-                               ]
-                             }
+                             @{}
                                launchOptions: nil];
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view = rootView;

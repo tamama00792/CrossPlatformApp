@@ -14,6 +14,8 @@
 		49C9C5022CE2F438006FB521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C9C5012CE2F438006FB521 /* Assets.xcassets */; };
 		49C9C5052CE2F438006FB521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C9C5032CE2F438006FB521 /* LaunchScreen.storyboard */; };
 		49C9C5082CE2F438006FB521 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C9C5072CE2F438006FB521 /* main.m */; };
+		1D6A1FD8CDD44128B68E1097 /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB5348AE6D6E4D3FB52FC898 /* antfill.ttf */; };
+		52E5B7DBEEE0477C87189E17 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847270848E514CA5A19C8A69 /* antoutline.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		49C9C5072CE2F438006FB521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5629C3386AA00073C34E0EC3 /* Pods-CrossPlatformDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossPlatformDemo.debug.xcconfig"; path = "Target Support Files/Pods-CrossPlatformDemo/Pods-CrossPlatformDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		916F8994CA1BB53205DE63DA /* libPods-CrossPlatformDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrossPlatformDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5348AE6D6E4D3FB52FC898 /* antfill.ttf */ = {isa = PBXFileReference; name = "antfill.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		847270848E514CA5A19C8A69 /* antoutline.ttf */ = {isa = PBXFileReference; name = "antoutline.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 				49C9C4F32CE2F437006FB521 /* Products */,
 				C37FEA18947AFF92E2DE638B /* Pods */,
 				7E5035057E3C40E5853AFAE9 /* Frameworks */,
+				B51745C372B04D1CBB164282 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +99,16 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		B51745C372B04D1CBB164282 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				CB5348AE6D6E4D3FB52FC898 /* antfill.ttf */,
+				847270848E514CA5A19C8A69 /* antoutline.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -158,6 +173,8 @@
 				49C9C5052CE2F438006FB521 /* LaunchScreen.storyboard in Resources */,
 				49C9C5022CE2F438006FB521 /* Assets.xcassets in Resources */,
 				49C9C5002CE2F437006FB521 /* Main.storyboard in Resources */,
+				1D6A1FD8CDD44128B68E1097 /* antfill.ttf in Resources */,
+				52E5B7DBEEE0477C87189E17 /* antoutline.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
