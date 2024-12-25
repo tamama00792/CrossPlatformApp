@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyleSheet,Text, View, TextInput, Button} from 'react-native';
-
+import { StyleSheet,Text, View} from 'react-native';
+import {
+  Icon,
+} from '@ant-design/react-native'
 export const SearchBar = ({hint, onSearch }) => {
 //   const contents = scores.map(score => (
 //     <Text key={score.name}>
@@ -27,7 +29,10 @@ const styles = StyleSheet.create({
     innerContainer: {
       backgroundColor: '#ECECEC',
       borderRadius: 10,
-      padding: 5
+      marginTop: 10,
+      marginBottom: 10,
+      marginLeft: 15,
+      marginRight: 15,
     },
     hintText: {
       fontSize: 20,
