@@ -16,6 +16,7 @@ export const SearchBar = ({hint, onSearch }) => {
         <Text style={styles.hintText}>
           {hint}
         </Text>
+        <Icon name="SearchOutlined"/>
       </View>
       
     </View>
