@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "yarn react-native start"
+    "start": "react-native start"
   },
   "dependencies": {
     "@ant-design/icons-react-native": "^2.3.2",

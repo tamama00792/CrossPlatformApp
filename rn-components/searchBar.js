@@ -17,7 +17,7 @@ export const SearchBar = ({hint, onSearch }) => {
           {hint}
         </Text>
       </View>
-      
+      <Icon name="SearchOutlined"/>
     </View>
   );
 };
