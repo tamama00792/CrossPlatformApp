@@ -6,7 +6,7 @@ class RNPDDHomePage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SearchBar hint='123' style={[styles.child,styles.searchBar]}></SearchBar>
+        <SearchBar hint='格兰菲迪12年' style={[styles.child,styles.searchBar]}></SearchBar>
         <View style={[styles.child,styles.segmentBar]}></View>
         <View style={[styles.child,styles.content]}></View>
         <View style={[styles.child,styles.tabBar]}></View>

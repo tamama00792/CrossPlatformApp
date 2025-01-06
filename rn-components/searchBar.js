@@ -1,23 +1,19 @@
 import React from 'react';
 import { StyleSheet,Text, View} from 'react-native';
-import {
-  Icon,
-} from '@ant-design/react-native'
-export const SearchBar = ({hint, onSearch }) => {
-//   const contents = scores.map(score => (
-//     <Text key={score.name}>
-//       {score.name}:{score.value}
-//       {'\n'}
-//     </Text>
-//   ));
+import { Icon } from '@ant-design/react-native'
+
+export const SearchBar = ({hint}) => {
   return (
     <View style={styles.container}>
       <View style = {styles.innerContainer}>
-        <Text style={styles.hintText}>
-          {hint}
-        </Text>
+        <View style = {styles.hint}>
+          <Icon style = {styles.cameraIcon } name="search"/>
+          <Text style={styles.hintText}>
+            {hint}
+          </Text>
+        </View>
+        <Icon style = {styles.cameraIcon } name="camera"/>
       </View>
-      <Icon name="SearchOutlined"/>
     </View>
   );
 };
@@ -33,10 +29,25 @@ const styles = StyleSheet.create({
       marginBottom: 10,
       marginLeft: 15,
       marginRight: 15,
+      padding: 10,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
+    },
+    hint: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flex: 1,
     },
     hintText: {
       fontSize: 20,
-      textAlign: 'center',
-      margin: 10,
+      color: 'gray',
+    },
+    searchIcon: {
+      color: 'gray',
+    },
+    cameraIcon: {
+      color: 'gray',
     },
   });
