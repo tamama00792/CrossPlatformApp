@@ -2,20 +2,25 @@ import { Icon } from '@ant-design/react-native';
 import React from 'react';
 import { StyleSheet,Text,Image, View} from 'react-native';
 
-export const FriendNews = () => {
+export const FriendNews = ({uriList}) => {
+    const avatarStyles = [styles.avatar1,styles.avatar2,styles.avatar3];
+    const components = uriList.map((item,index) => {
+        return (
+            <Image source={{ uri: item }} style={[styles.avatar,avatarStyles[index]]} />
+        );
+    });
     return (
         <View style={styles.container}>
             <View style={styles.leftPart}>
-            <Image style={styles.tinyLogo} source={{uri:'https://rn.nodejs.cn/img/tiny_logo.png'}}
-      />
-                <Text style={{flex:2}}>拼小圈</Text>
+                <Image style={styles.tinyLogo} source={{uri:'https://rn.nodejs.cn/img/tiny_logo.png'}}/>
+                <Text style={styles.title}>拼小圈</Text>
             </View>
             <View style={styles.rightPart}>
-                <Image source={{ uri: 'https://img2.baidu.com/it/u=1006976876,3734730163&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1736528400&t=2de6f1665df95b007d73679e0b5ca0ae' }} style={styles.image} />
-                <Image source={{ uri: 'https://img1.baidu.com/it/u=2722956424,1906108741&fm=253&app=138&size=w931&n=0&f=PNG&fmt=auto?sec=1736528400&t=40ac05dc485527299c514638dacddb23' }} style={styles.image} />
-                <Image source={{ uri: 'https://img0.baidu.com/it/u=3178086179,1169036752&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1736528400&t=e020afdf4906146e78c2b025ab1f7d01' }} style={styles.image} />
-                <Text>新动态和提醒</Text>
-                <Text>34</Text>
+                {components}
+                <Text style={styles.hint}>新动态和提醒</Text>
+                <View style={styles.mark}>
+                <Text style={styles.markText}>34</Text>
+                </View>
                 <Icon name="right" />
             </View>
         </View>
@@ -25,22 +30,54 @@ export const FriendNews = () => {
 const styles = StyleSheet.create({
     container: {
       flexDirection:'row',
-      flex:1
+      height: 60,
     },
     leftPart: {
         flex:1,
         flexDirection:'row',
+        alignItems:'center',
     },
     rightPart: {
         flex:2,
         flexDirection:'row',
+        alignItems:'center',
     },
-    image: {
+    avatar: {
         width: 40,
         height: 40,
+        borderRadius: 20,
+    },
+    avatar1: {
+        marginLeft:60,
+    },
+    avatar2: {
+        marginLeft:-70,
+    },
+    avatar3: {
+        marginLeft:-70,
+        marginRight:65,
     },
     tinyLogo: {
-        width: 40,
-        height: 40,
-      },
+        width: 30,
+        height: 30,
+        marginLeft:20,
+        marginRight:10,
+    },
+    title: {
+        fontSize: 20,
+        flex:2,
+    },
+    hint: {
+        fontSize: 18,
+        color: 'gray',
+    },
+    mark: {
+        backgroundColor: '#ed3437',
+        borderRadius: 10,
+        paddingHorizontal:3,
+    },
+    markText: {
+        fontSize: 18,
+        color: 'white',
+    }
   });
