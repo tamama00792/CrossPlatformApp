@@ -1,4 +1,3 @@
-import a from '@ant-design/react-native/lib/modal/alert';
 import React from 'react';
 import { StyleSheet,Text,Image, View} from 'react-native';
 
@@ -36,5 +35,6 @@ const styles = StyleSheet.create({
         marginTop: 5,
         fontSize: 12,
         marginBottom: 10,
+        color:'gray'
     },
 });
